@@ -1,12 +1,10 @@
-# DINO <img src="figs/dinosaur.png" width="30">
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dino-detr-with-improved-denoising-anchor-1/object-detection-on-coco-minival)](https://paperswithcode.com/sota/object-detection-on-coco-minival?p=dino-detr-with-improved-denoising-anchor-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dino-detr-with-improved-denoising-anchor-1/object-detection-on-coco)](https://paperswithcode.com/sota/object-detection-on-coco?p=dino-detr-with-improved-denoising-anchor-1)
+# M2F-DETR <img src="figs/dinosaur.png" width="30">
 
-This is the official implementation of the paper "[DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection](https://arxiv.org/abs/2203.03605)". 
-(DINO pronounced `daɪnoʊ' as in dinosaur)
+这是一个分阶段体积检测模型，我们首先开源了其中二维检测部分模型M2F-DETR的代码，该代码是在DINO的代码的基础上进行修改，主要修改点包括以下：
+（1）多序列数据的读取及特征提取
+（2）重点修改encoder部分，引入MSeqFusion和MscaleFusion，相关修改在model/
 
-Authors: [Hao Zhang](https://haozhang534.github.io/)\*, [Feng Li](https://fengli-ust.github.io/)\*, [Shilong Liu](https://www.lsl.zone/)\*, [Lei Zhang](https://www.leizhang.org/), [Hang Su](https://www.suhangss.me/), [Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml), [Lionel M. Ni](https://www.cse.ust.hk/~ni/), [Heung-Yeung Shum](https://scholar.google.com.hk/citations?user=9akH-n8AAAAJ&hl=en)
-
+Authors: Majiajie
 # News
 [2023/7/10] We release [Semantic-SAM](https://github.com/UX-Decoder/Semantic-SAM), a universal image segmentation model to enable segment and recognize anything at any desired granularity. **Code** and **checkpoint** are available!
 </br>
