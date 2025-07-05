@@ -1,12 +1,15 @@
-M2F-DETR
-
-Introduction
-这是一个分阶段体积检测模型，我们首先开源了其中二维检测部分模型M2F-DETR的代码，该代码是在DINO的代码的基础上进行修改，主要修改点包括以下： 
+VoldetectNet
+这是一个分阶段体积检测模型，主要由多序列二维检测模型M2F-DETR和深度预测模型ADP-Net构成，我们首先开源了其中二维检测部分模型M2F-DETR的代码，该代码是在DINO的代码的基础上进行修改，
+## Project Introduction
+<details>
+M2F-DETR is in [DINO code] (https://github.com/IDEACVR/DINO) on the basis of the code changes, major changes points include the following: 
 （1）多序列数据的读取,相关修改在datasets，我们提供一种数据的读入方式，但可能并不适合于你的数据，可以作为参考，相关代码在coco.py和transfom.py中。
 大致思路为建立一个映射关系，寻找到每一张中心切片所对应的多序列切片读入--及多张图像，由于需要处理多张图像，原本的transform变换不再设配，需要能够同时处理多张图像，所以重构transfom.py中的代码
 （2）多序列特征提取及预处理,相关修改在models/dino/dino.py
-（2）重点修改encoder部分，引入MSeqFusion和MscaleFusion，相关修改再models/dino/deformable_transformer中
-Authors: Majiajie
+（3）重点修改encoder部分，引入MSeqFusion和MscaleFusion，相关修改在models/dino/deformable_transformer中
+Author: Majiajie
+</details>
+
 
 ## Installation
 
