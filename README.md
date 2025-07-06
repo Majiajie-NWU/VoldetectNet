@@ -89,12 +89,15 @@ notes: The dataset you prepared is different from the one I used. You need to wr
 
 <details>
   The model can be trained through main.py
-  <summary>1. Trian models</summary>
+  <summary>Trian models</summary>
     <!-- ### Train model -->
-  ```
- python.py main.py
-  ```
-The model can be evaluated through commands
+    ```
+    python.py main.py
+    ```
+</details>
+<details>
+  The model can be evaluated through commands
+  <summary>Eval models</summary>
   <!-- ### Eval model -->
   ```sh
   bash scripts/DINO_eval.sh /path/to/your/COCODIR /path/to/your/checkpoint
