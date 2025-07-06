@@ -1,16 +1,18 @@
 ## VoldetectNet
 
 This is a staged volume detection model, mainly composed of the multi-sequence 2D detection model M2F-DETR and the depth prediction model ADP-Net. We first open-sourced the code of the 2D detection part model M2F-DETR, which is modified based on the code of DINO.
-
+ADP-Net is coming soon.
 ## Project Introduction
 
 <details>
-M2F-DETR is in [DINO code] (https://github.com/IDEACVR/DINO) on the basis of the code changes, major changes points include the following: 
+   <summary>Project Introduction</summary>
+    M2F-DETR is in [DINO code] (https://github.com/IDEACVR/DINO) on the basis of the code changes, major changes points include the following: 
   (1) Reading multi-sequence data, the relevant modifications are in datasets. We provide a way to read data in, but it may not be suitable for your data. It can be used as a reference. The relevant code is in coco.py and Transformom.py.
   The general idea is to establish a mapping relationship to find the multi-sequence slice read in corresponding to each central slice - and multiple images. Since multiple images need to be processed, the original transform transformation is no longer configured. It is necessary to be able to process multiple images simultaneously, so the code in Transformom.py is restructured
 （2）Multi-sequence feature extraction and preprocessing, related modifications are available in models/dino/dino.py
 （3）The key modification of the encoder part is to introduce MSeqFusion and MscaleFusion. The relevant modifications are in models/dino/deformable_In the transformer
-Author: Majiajie
+<summary></summary>
+  Author: Majiajie
 </details>
 
 
