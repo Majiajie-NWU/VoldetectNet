@@ -110,16 +110,7 @@ Our model is based on [DINO](https://arxiv.org/abs/2203.03605)
 <p>
 <font size=3><b>DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection</b></font>
 <br>
+We thank the authors of DINO for their great work.
 
+We also thank great previous work including DETR, Deformable DETR, SMCA, Conditional DETR, Anchor DETR, Dynamic DETR, etc. More related work are available at [Awesome Detection Transformer](https://github.com/IDEACVR/awesome-detection-transformer).
 
-We thank great previous work including DETR, Deformable DETR, SMCA, Conditional DETR, Anchor DETR, Dynamic DETR, etc. More related work are available at [Awesome Detection Transformer](https://github.com/IDEACVR/awesome-detection-transformer).
-
-## LICNESE
-
-DINO is released under the Apache 2.0 license. Please see the [LICENSE](LICNESE) file for more information.
-
-Copyright (c) IDEA. All rights reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
